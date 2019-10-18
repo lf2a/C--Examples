@@ -80,8 +80,19 @@ namespace C__Examples {
             // var testeEnum = new Enum ();
             // testeEnum.t1 ();
 
-            var testeStruct = new Struct ();
-            testeStruct.t1 ();
+            // var testeStruct = new Struct ();
+            // testeStruct.t1 ();
+
+            // var testeRW = new ReadAndWrite ();
+            // testeRW.t1 (); // leitura e escrita de arquivo
+            // testeRW.t2 (); // `append` arquivo
+            // testeRW.t3 (); // excluir arquivo
+            // testeRW.t4 (); // excluir diretorio
+            // testeRW.t5 (); // renomear arquivo
+            // testeRW.t6 (); // diretorio renomeado
+            // testeRW.t7 (); // criar diretorio
+            // testeRW.t8 (); // obter informacao de arquivo
+            // testeRW.t9 (); // obter infomações dos arquivos do diretorio
         }
     }
 }
