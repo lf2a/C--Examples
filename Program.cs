@@ -93,6 +93,10 @@ namespace C__Examples {
             // testeRW.t7 (); // criar diretorio
             // testeRW.t8 (); // obter informacao de arquivo
             // testeRW.t9 (); // obter infomações dos arquivos do diretorio
+
+            // var testeDT = new DataType ();
+            // testeDT.t1 ();
+            // testeDT.t2 ();
         }
     }
 }

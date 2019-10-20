@@ -1,0 +1,14 @@
+@model Note_CRUD.Models.Note
+
+@{
+ViewData["Title"] = "Edit";
+Layout = "~/Views/Shared/_layout.cshtml";
+}
+
+<form asp-controller="Note" asp-action="Edit" method="post">
+    <input type="text" name="id" id="id" value="@Model.id" readonly>
+    <input type="text" name="titulo" id="titulo" value="@Model.titulo">
+    <input type="text" name="autor" id="autor" value="@Model.autor">
+    <textarea name="nota" id="nota" cols="30" rows="10">@Model.nota</textarea>
+    <button type="submit">Editar</button>
+</form>

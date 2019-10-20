@@ -1,0 +1,25 @@
+@model Note_CRUD.Models.Note
+
+@{
+ViewData["Title"] = "Get";
+Layout = "~/Views/Shared/_layout.cshtml";
+}
+
+<table>
+  <tr>
+    <td>ID</td>
+    <td>@Html.DisplayTextFor(modelItem => Model.id)</td>
+  </tr>
+  <tr>
+    <td>Titulo</td>
+    <td>@Html.DisplayTextFor(modelItem => Model.titulo)</td>
+  </tr>
+  <tr>
+    <td>Autor</td>
+    <td>@Html.DisplayTextFor(modelItem => Model.autor)</td>
+  </tr>
+  <tr>
+    <td>Note</td>
+    <td>@Html.DisplayTextFor(modelItem => Model.nota)</td>
+  </tr>
+</table>

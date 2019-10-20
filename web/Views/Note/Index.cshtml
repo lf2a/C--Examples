@@ -1,0 +1,39 @@
+@model IEnumerable<Note_CRUD.Models.Note>
+  @{
+  ViewData["Title"] = "Index";
+  Layout = "~/Views/Shared/_layout.cshtml";
+  }
+
+  <table id="notes">
+    <thead>
+      <td>ID</td>
+      <td>Titulo</td>
+      <td>Autor</td>
+      <td>Nota</td>
+      <td colspan="4">Opção</td>
+    </thead>
+    <tbody>
+      <tr>
+        <td colspan="7">
+          <a asp-action="Add">Add</a>
+        </td>
+      </tr>
+      @foreach(var n in Model){
+      <tr>
+        <td>@Html.DisplayTextFor(modelItem => n.id)</td>
+        <td>@Html.DisplayTextFor(modelItem => n.titulo)</td>
+        <td>@Html.DisplayTextFor(modelItem => n.autor)</td>
+        <td>@Html.DisplayTextFor(modelItem => n.nota)</td>
+        <td>
+          <a asp-action="Get" asp-route-id="@n.id">Ver</a>
+        </td>
+        <td>
+          <a asp-action="Edit" asp-route-id="@n.id">Editar</a>
+        </td>
+        <td>
+          <a asp-action="Del" asp-route-id="@n.id">Del</a>
+        </td>
+      </tr>
+      }
+    </tbody>
+  </table>
